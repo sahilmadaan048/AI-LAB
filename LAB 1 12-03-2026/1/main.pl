@@ -18,3 +18,7 @@ diagnosis(Patient, cold) :-
 diagnosis(Patient, allergy) :-
     symptom(Patient, sneezing),
     symptom(Patient, fever).
+
+% queries
+% ?- diagnosis(john, Disease).
+% ?- diagnosis(mary, Disease).

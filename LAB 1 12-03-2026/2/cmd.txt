@@ -1,0 +1,68 @@
+% =========================
+% BASIC TROUBLESHOOTING QUERIES
+% =========================
+
+% Find what issue a specific car has
+?- troubleshooting(car1, Issue).
+?- troubleshooting(car2, Issue).
+?- troubleshooting(car3, Issue).
+?- troubleshooting(car4, Issue).
+
+% =========================
+% CHECK SPECIFIC ISSUE FOR A CAR
+% =========================
+
+% Check if car1 has a dead battery
+?- troubleshooting(car1, dead_battery).
+
+% Check if car2 has blown head gasket
+?- troubleshooting(car2, blown_head_gasket).
+
+% Check if car3 has radiator leak
+?- troubleshooting(car3, radiator_leak).
+
+% Check if car4 has no fuel problem
+?- troubleshooting(car4, no_fuel).
+
+% =========================
+% FIND ALL CARS WITH A GIVEN ISSUE
+% =========================
+
+% Find cars with dead battery
+?- troubleshooting(Car, dead_battery).
+
+% Find cars with blown head gasket
+?- troubleshooting(Car, blown_head_gasket).
+
+% Find cars with radiator leak
+?- troubleshooting(Car, radiator_leak).
+
+% Find cars with no fuel issue
+?- troubleshooting(Car, no_fuel).
+
+% =========================
+% WORKING WITH FAULTS
+% =========================
+
+% List all faults of a specific car
+?- car_faults(car1, Fault).
+?- car_faults(car2, Fault).
+?- car_faults(car3, Fault).
+?- car_faults(car4, Fault).
+
+% Find which cars have a specific fault
+?- car_faults(Car, engine_wont_start).
+?- car_faults(Car, overheating).
+?- car_faults(Car, coolant_low).
+?- car_faults(Car, whitesmoke).
+?- car_faults(Car, fuel_gauge_empty).
+
+% =========================
+% GENERAL / EXPLORATORY QUERIES
+% =========================
+
+% Find all possible troubleshooting results for all cars
+?- troubleshooting(Car, Issue).
+
+% Find all facts in the knowledge base
+?- car_faults(Car, Fault).

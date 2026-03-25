@@ -1,0 +1,22 @@
+% =========================
+% CHECK ELIGIBILITY
+% =========================
+
+% Merit-based eligibility
+?- merit_eligible(student1).
+?- merit_eligible(Name).
+
+% Income-based eligibility
+?- income_eligible(student1).
+?- income_eligible(Name).
+
+% Reserved category check
+?- reserved_category(student1).
+?- reserved_category(Name).
+
+% =========================
+% GENERAL QUERY
+% =========================
+
+% View student details
+?- student(Name, CGPA, Income, Category).

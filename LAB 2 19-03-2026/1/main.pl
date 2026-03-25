@@ -28,3 +28,4 @@ ancestor(X, Y) :- parent(X, Z), ancestor(Z, Y).
 % queries
 % ?- ancestor(john, alice).
 % ?- grandparent(john, bob).
+% ?- grandparent(john, mary).

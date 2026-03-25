@@ -26,3 +26,31 @@ troubleshooting(Car, radiator_leak) :-
 troubleshooting(Car, no_fuel) :-
     car_faults(Car, engine_wont_start),
     car_faults(Car, fuel_gauge_empty).
+
+
+
+% =========================
+% FIND ISSUE FOR EACH CAR
+% =========================
+%?- troubleshooting(car1, Issue).
+%?- troubleshooting(car2, Issue).
+%?- troubleshooting(car3, Issue).
+%?- troubleshooting(car4, Issue).
+
+% =========================
+% CHECK SPECIFIC ISSUE
+% =========================
+%?- troubleshooting(car1, dead_battery).
+%?- troubleshooting(car4, no_fuel).
+
+% =========================
+% FIND CARS BY ISSUE
+% =========================
+%?- troubleshooting(Car, dead_battery).
+%?- troubleshooting(Car, radiator_leak).
+
+% =========================
+% VIEW FAULTS
+% =========================
+%?- car_faults(car1, Fault).
+%?- car_faults(Car, engine_wont_start).
